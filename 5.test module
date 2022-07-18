@@ -1,0 +1,19 @@
+import Prime
+print('The first 100 prime numbers are:')
+for i in range(2,101):
+   if (Prime.isPrime(i)):
+      print(i,end=' ')
+print('\nThe first 200 palindrome prime numbers are:')
+for i in range(2,201):
+     if (Prime.isPalindromePrime(i)):
+       print(i,end=' ')
+print('\nThe first 100 Emirp numbers are:')
+for i in range(2,101):
+   if (Prime.isEmirp(i)):
+      print(i,end=' ')
+print('\nMersenne prime numbers for the p value below 32:')
+for i in range(2,33):
+   if (Prime.isPrime(Prime.mersennePrime(i))):
+       print(i,end=' ') 
+print('\nTwin prime numbers below 1000:')
+Prime.printTwinPrimes(1000)
